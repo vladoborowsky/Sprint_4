@@ -14,6 +14,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void setupAll() {
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         WebDriverManager.chromedriver().setup();
 //        WebDriverManager.firefoxdriver().setup();
     }
